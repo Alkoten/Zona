@@ -1,94 +1,61 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+#game-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 #topbar {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: right;
 }
 
-#main-container {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
+#main-area {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 #rightbar {
-  width: 15%;
-  background-color: #e0e0e0;
-  padding: 10px;
-  border-left: 2px solid #ccc;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#mainzone {
-  flex: 1;
-  background-color: #fff;
-  padding: 20px;
+    width: 15%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    height: calc(100vh - 60px);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #downbar {
-  background-color: #ddd;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
-#friends {
-  background-color: #ccc;
-  padding: 10px;
-  text-align: center;
-}
-#character-data {
-  padding: 15px;
-  background-color: #fafafa;
-  border-top: 1px solid #ccc;
-}
-
-#character-data div {
-  margin-bottom: 10px;
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-#log {
-  margin-top: 20px;
-  background-color: #fff;
-  border: 1px solid #bbb;
-  padding: 5px;
-  max-height: 200px;
-  overflow-y: auto;
-}
-
-#log h3 {
-  margin-bottom: 5px;
-  font-size: 14px;
-}
-
-#log-list {
-  list-style: none;
-  padding-left: 10px;
-  font-size: 12px;
-}
-
-#energy-panel {
-  background-color: #eee;
-  padding: 10px;
-  margin-top: 20px;
-  border: 1px solid #ccc;
+button:hover {
+    background-color: #45a049;
 }
